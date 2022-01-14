@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Startup</title>
-<!--.....-->
-    <!-- Google Fonts -->
-   <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Signin Template · Bootstrap v5.1</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="style.css">
+    <script src=" https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <div class="container d-flex justify-content-center align-items-center h-100">
-      <div class="row">
-        <header class="text-center col-12">
-          <h1 class="text-uppercase"><strong>tHE BIGGEST STARTUP EVENT OF THE YEAR</strong></h1>
-        </header>
-        <section class="buffer col-12"></section>
-        <section class="text-center col-12">
-          <hr>
-          <a href="https://mailchi.mp/c024583283bc/mystartuppage">
-          <button class="btn btn-danger"> find out more</button>
-          </a>
-        </section>
+  <body class="text-center">
+    <main class="form-signin">
+      <div>
+        <img class="mb-4" src="vote.png" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="user-username" placeholder="Enter Metamask Addrress">
+          <label for="user-username">Enter Metamask Address</label>
+        </div>
       </div>
-    </div>  
+    <br>
+    <button id="btn-login" class="w-100 btn btn-lg btn-primary">Sign in</button>
+    <script src="main.js"></script>
   </body>
 </html>
